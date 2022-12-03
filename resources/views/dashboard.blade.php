@@ -9,8 +9,21 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
-                    {{ __("You're logged in!") }}
-                    
+                    <div>
+                        <h2 class="font-semibold text-lg py-1">Bem vindo ao Ponto Eletrônico</h2>
+                        <p>Neste sistema temos o cadastro de usuário e cada usuário registrará o seu ponto, sendo que o mesmo terá acesso apenas ao seus respectivos registros no banco de dados.
+                            Dessa forma o registro diário da carga horária de um colaborador conterá os seguintes registros: a data do registro, a entrada, saída ao intervalo, retorno 
+                            do intervalo e término do expediente.
+                        </p>
+                        <p>As possibilidades para aumentar a complexibilidade deste sistema é surpreendente. Abaixo algumas Feautures:</p>
+                        <ul class="py-2">
+                            <li class="flex items-center gap-1"><i class="ph-arrow-circle-right"></i> Painel administrativo</li>
+                            <li class="flex items-center gap-1"><i class="ph-arrow-circle-right"></i> Atualização e exlusão</li>
+                            <li class="flex items-center gap-1"><i class="ph-arrow-circle-right"></i> Horas extras</li>
+                            <li class="flex items-center gap-1"><i class="ph-arrow-circle-right"></i> Faltas e justificativas</li>
+                            <li class="flex items-center gap-1"><i class="ph-arrow-circle-right"></i> Níveis de acesso</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

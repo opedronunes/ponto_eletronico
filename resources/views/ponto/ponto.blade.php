@@ -4,7 +4,7 @@
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
                 Ponto eletrônico
             </h2>
-            <p id="horario" class="py-3 text-center text-lg text-gray-800"></p>
+            <p id="horario" class="text-lg text-gray-800"></p>
         </div>
     </x-slot>
 
@@ -45,7 +45,7 @@
                                             <form action="{{ route('ponto.destroy', $ponto->id) }}" method="post">
                                                 @csrf
                                                 @method('DELETE')
-                                                <input type="submit" value="Excluir" class="cursor-pointer w-auto px-1 py-1 text-lg border border-1 border-red-700 rounded hover:bg-red-700 transition-colors">
+                                                <button type="submit" class="cursor-pointer w-auto px-1 py-1 text-2xl flex items-center border border-1 rounded hover:bg-red-500 transition-colors"><i class="ph-trash"></i></button>
                                             </form>
                                         </td>
                                     @endif
@@ -56,7 +56,7 @@
                         <div class="flex justify-center items-center my-6 gap-2">
                             <form action="{{ route('ponto.store') }}" method="post">
                                 @csrf
-                                <input type="submit" value="Bater ponto" class="cursor-pointer w-auto px-3 py-1 text-lg bg-green-700 rounded hover:bg-green-900 transition-colors">
+                                <input type="submit" value="Bater ponto" class="cursor-pointer w-auto px-3 py-1 text-lg border border-1 rounded hover:bg-green-700 hover:text-white transition-colors">
                             </form>
                             
                         </div>
