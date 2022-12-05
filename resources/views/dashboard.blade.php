@@ -17,11 +17,18 @@
                         </p>
                         <p>As possibilidades para aumentar a complexibilidade deste sistema é surpreendente. Abaixo algumas Feautures:</p>
                         <ul class="py-2">
-                            <li class="flex items-center gap-1"><i class="ph-arrow-circle-right"></i> Painel administrativo</li>
-                            <li class="flex items-center gap-1"><i class="ph-arrow-circle-right"></i> Atualização e exlusão</li>
-                            <li class="flex items-center gap-1"><i class="ph-arrow-circle-right"></i> Horas extras</li>
-                            <li class="flex items-center gap-1"><i class="ph-arrow-circle-right"></i> Faltas e justificativas</li>
-                            <li class="flex items-center gap-1"><i class="ph-arrow-circle-right"></i> Níveis de acesso</li>
+                            <li class="flex items-center gap-1"><i class="ph-arrow-circle-right bg-green-600 text-white rounded-full text-lg"></i>Cadastro de usuários</li>
+                            <li class="flex items-center gap-1"><i class="ph-arrow-circle-right bg-green-600 text-white rounded-full text-lg"></i>Retorno dos dados individual do usuário</li>
+                            <li class="flex items-center gap-1"><i class="ph-arrow-circle-right bg-green-600 text-white rounded-full text-lg"></i>Inserção da entrada</li>
+                            <li class="flex items-center gap-1"><i class="ph-arrow-circle-right bg-green-600 text-white rounded-full text-lg"></i>Inserção da saída ao intervalo</li>
+                            <li class="flex items-center gap-1"><i class="ph-arrow-circle-right bg-green-600 text-white rounded-full text-lg"></i>Inserção do retorno do intervalo</li>
+                            <li class="flex items-center gap-1"><i class="ph-arrow-circle-right bg-green-600 text-white rounded-full text-lg"></i>Inserção da saída</li>
+
+                            <li class="flex items-center gap-1"><i class="ph-arrow-circle-right text-lg"></i> Painel administrativo</li>
+                            <li class="flex items-center gap-1"><i class="ph-arrow-circle-right text-lg"></i> Atualização e exlusão</li>
+                            <li class="flex items-center gap-1"><i class="ph-arrow-circle-right text-lg"></i> Horas extras</li>
+                            <li class="flex items-center gap-1"><i class="ph-arrow-circle-right text-lg"></i> Faltas e justificativas</li>
+                            <li class="flex items-center gap-1"><i class="ph-arrow-circle-right text-lg"></i> Níveis de acesso</li>
                         </ul>
                     </div>
                 </div>

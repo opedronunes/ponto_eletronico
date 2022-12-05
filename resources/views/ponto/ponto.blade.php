@@ -1,10 +1,10 @@
 <x-app-layout>
     <x-slot name="header">
         <div class="flex items-center justify-between">
-            <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+            <h2 class="font-semibold text-2xl text-gray-800 leading-tight">
                 Ponto eletrônico
             </h2>
-            <p id="horario" class="text-lg text-gray-800"></p>
+            <p id="horario" class="text-2xl text-gray-800"></p>
         </div>
     </x-slot>
 
@@ -72,6 +72,8 @@
                                 <th>Saída intervalo</th>
                                 <th>Retorno intervalo</th>
                                 <th>Saída</th>
+                                <th>Horas trabalhadas</th>
+                                <th>Horas Extra</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -83,6 +85,8 @@
                                         <td>{{ $todos_ponto->saida_intervalo }}</td>
                                         <td>{{ $todos_ponto->retorno_intervalo }}</td>
                                         <td>{{ $todos_ponto->saida}}</td>
+                                        <td>{{ $todos_ponto->worked_time }}</td>
+                                        <td> - </td>
                                     </tr>
                                 @endforeach
                             @else

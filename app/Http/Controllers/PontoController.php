@@ -36,18 +36,18 @@ class PontoController extends Controller
         $data_agora =  $data->toDateString();
 
         $ponto = Ponto::where('user_id', $id)->where('data_entrada', $data_agora)->first();
-        
-        $horaTrabalho = $ponto->worked_time;
 
-        //dd($horaTrabalho);
+        $inicioData = now()->year.'-'.now()->month.'-01';
 
-        //dd($ponto);
-
-        $todos_pontos = DB::table('pontos')
-            ->select(['data_entrada', 'entrada', 'saida_intervalo', 'retorno_intervalo', 'saida'])
-            ->where('user_id', $id)
+        $todos_pontos = Ponto::where('user_id', $id)
+            ->whereDate('data_entrada', '>=', $inicioData)
             ->orderBy('data_entrada', 'ASC')
             ->get();
+
+            //->select(['data_entrada', 'entrada', 'saida_intervalo', 'retorno_intervalo', 'saida', 'worked_time'])
+            
+
+        //dd($todos_pontos);
     
         return view('ponto.ponto', compact('ponto'), ['todos_pontos' => $todos_pontos]);
     }
@@ -134,26 +134,7 @@ class PontoController extends Controller
      */
     public function show(Ponto $ponto)
     {
-
-        //dd($ponto); 
-
-        //$pontos = DB::statement("select * from pontos where user_id = $request->input('user_id')");
-
-        //$pontos = Ponto::where('user_id', $request->input('user_id'))->get();
-
-        //dd($pontos);
-        
-        /*
-        if (Ponto::where('user_id', $request->input('user_id'))->exists()) {
-            
-            $registros = Ponto::where('user_id', $user_id)->get();
-
-            
-            return view('dashboard.todos_pontos',compact('ponto'), ['registros' => $registros]);
-        }
-        */
-        //return view('dashboard.todos_pontos',compact('ponto'), ['todos_pontos' => $todos_pontos]);
-
+        //
     }
 
     /**
